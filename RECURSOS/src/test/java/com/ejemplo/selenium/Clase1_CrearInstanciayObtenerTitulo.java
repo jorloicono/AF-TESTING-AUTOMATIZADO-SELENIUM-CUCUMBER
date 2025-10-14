@@ -1,4 +1,4 @@
-package selenium_example;
+package test.java.com.ejemplo.selenium;
 
 // Tenemos que tener las librerias externas y los drivers dentro de nuestro proyecto
 
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class Class1 {
+public class Clase1_CrearInstanciayObtenerTitulo {
     public static void main(String[] args) {
 
         System.setProperty("web-driver.chrome.driver","./drivers/chromedriver.exe");

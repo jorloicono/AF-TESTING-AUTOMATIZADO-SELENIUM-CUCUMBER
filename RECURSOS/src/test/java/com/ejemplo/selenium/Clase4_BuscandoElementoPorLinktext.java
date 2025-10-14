@@ -1,11 +1,11 @@
-package selenium_example;
+package test.java.com.ejemplo.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class Class2 {
+public class Clase4_BuscandoElementoPorLinktext{
     public static void main(String[] args) {
 
         System.setProperty("web-driver.chrome.driver","./drivers/chromedriver.exe");
@@ -24,9 +24,9 @@ public class Class2 {
 
             Thread.sleep(2000);
 
-            // Busco el elemento con id ca-history y clico sobre el
+            // Busco el elemento con ese linktext y clico sobre el
 
-            driver.findElement(By.id("ca-history")).click();
+            driver.findElement(By.linkText("Ver historial")).click();
 
             // Esperamos 2 segundos
 

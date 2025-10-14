@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class Class3 {
+public class Clase3_BuscarElementoPorElId {
     public static void main(String[] args) {
 
         System.setProperty("web-driver.chrome.driver","./drivers/chromedriver.exe");
@@ -24,9 +24,9 @@ public class Class3 {
 
             Thread.sleep(2000);
 
-            // Busco el elemento con ese linktext y clico sobre el
+            // Busco el elemento con id ca-history y clico sobre el
 
-            driver.findElement(By.linkText("Ver historial")).click();
+            driver.findElement(By.id("ca-history")).click();
 
             // Esperamos 2 segundos
 
