@@ -1,20 +1,13 @@
-package selenium_example;
+package ejemplosylabs.java.com.ejemplos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
-
-import java.time.Duration;
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
 
 
-public class Class10 {
+public class Clase7_RellenarUnFormulario {
     public static void main(String[] args){
 
         System.setProperty("web-driver.chrome.driver","./drivers/chromedriver.exe");
@@ -49,7 +42,7 @@ public class Class10 {
             Thread.sleep(5000);
 
             WebElement fileinput = driver.findElement(By.name("my-file"));
-            fileinput.sendKeys("C:/Users/Jorge/Desktop/SELENIUM.pptx");
+            fileinput.sendKeys("./drivers/chromedriver.exe");
             Thread.sleep(5000);
 
             WebElement submitButton = driver.findElement(By.cssSelector("button[type = 'submit']"));

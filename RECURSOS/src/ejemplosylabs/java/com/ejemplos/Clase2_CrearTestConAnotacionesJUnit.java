@@ -1,4 +1,4 @@
-package test.java.com.ejemplo.selenium;
+package ejemplosylabs.java.com.ejemplos;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

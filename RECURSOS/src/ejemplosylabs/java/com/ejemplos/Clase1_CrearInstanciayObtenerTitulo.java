@@ -1,4 +1,4 @@
-package test.java.com.ejemplo.selenium;
+package ejemplosylabs.java.com.ejemplos;
 
 // Tenemos que tener las librerias externas y los drivers dentro de nuestro proyecto
 

@@ -1,12 +1,11 @@
-package test.java.com.ejemplo.selenium;
+package ejemplosylabs.java.com.ejemplos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class Clase6_BuscarElementoPorXPath {
+public class Clase3_BuscarElementoPorElId {
     public static void main(String[] args) {
 
         System.setProperty("web-driver.chrome.driver","./drivers/chromedriver.exe");
@@ -25,18 +24,18 @@ public class Clase6_BuscarElementoPorXPath {
 
             Thread.sleep(2000);
 
-            // Busco el elemento con ese xpath y lo guardo en un webelement
+            // Busco el elemento con id ca-history y clico sobre el
 
-            WebElement leerButton = driver.findElement(By.xpath("//*[@id=\"main-tfa\"]//*[text() = ' Leer ']"));
-            leerButton.click();
+            driver.findElement(By.id("ca-history")).click();
 
             // Esperamos 2 segundos
 
             Thread.sleep(2000);
 
-            // Printeo el titulo de esa nueva pagina
+            // Printeo el titulo de esa nueva pagina, veo que es el historial de la pagina
 
-            System.out.println(driver.getTitle());
+            String titulo = driver.getTitle();
+            System.out.println(titulo);
 
         }catch (Exception e){
             e.printStackTrace();

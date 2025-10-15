@@ -1,12 +1,11 @@
-package test.java.com.ejemplo.selenium;
+package ejemplosylabs.java.com.ejemplos;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class Clase5_BuscarElementoPorTagName {
+public class Clase4_BuscandoElementoPorLinktext{
     public static void main(String[] args) {
 
         System.setProperty("web-driver.chrome.driver","./drivers/chromedriver.exe");
@@ -23,18 +22,19 @@ public class Clase5_BuscarElementoPorTagName {
 
             // Esperamos 2 segundos
 
-            Thread.sleep(1000);
+            Thread.sleep(2000);
 
-            // Busco el elemento con ese tag name y lo guardo en un webelement
+            // Busco el elemento con ese linktext y clico sobre el
 
-            WebElement titleElement = driver.findElement(By.tagName("title"));
+            driver.findElement(By.linkText("Ver historial")).click();
 
-            // Obtengo el atributo inner text de ese webelement
+            // Esperamos 2 segundos
 
-            String titulo = titleElement.getAttribute("innerText");
+            Thread.sleep(2000);
 
             // Printeo el titulo de esa nueva pagina, veo que es el historial de la pagina
 
+            String titulo = driver.getTitle();
             System.out.println(titulo);
 
         }catch (Exception e){
