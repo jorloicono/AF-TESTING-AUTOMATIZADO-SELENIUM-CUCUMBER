@@ -5,8 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.concurrent.TimeUnit;
 
-public class Class6 {
+
+public class Clase9_EjemploImplicitWait {
     public static void main(String[] args) {
 
         System.setProperty("web-driver.chrome.driver","./drivers/chromedriver.exe");
@@ -15,11 +17,15 @@ public class Class6 {
 
         WebDriver driver = new ChromeDriver();
 
+        // Con esto le indico a selenium que en caso de no aparecer al principio espere 10 segundos hasta encontrarlo
+
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         try{
 
             // Navegamos a la web
 
-            driver.get("C:/Users/Jorge/Desktop/AF-SELENIUM-FORMADORES-IT/RECURSOS/index_completo.html");
+            driver.get("C:\\Users\\Jorge\\Desktop\\AF-TESTING-AUTOMATIZADO-SELENIUM-CUCUMBER\\RECURSOS\\src\\ejemplosylabs\\resources\\index_completo.html");
 
             // Busco el elemento por id y lo guardo en un webelement
 
@@ -33,8 +39,8 @@ public class Class6 {
 
             Thread.sleep(5000);
 
-            // Esto me va a dar un error, ¿?¿?¿?¿? no ha cargado por que no hay ningun mecanismo de espera y selenium no ha sido capaz de  encontrar ese boton
-            // En la class7 veremos como arreglar esto
+            // Esto ya no me da error puedo ver en el navegador que me aparece como si se ha publicado el mensaje correctamente
+
 
         }catch (Exception e){
             e.printStackTrace();

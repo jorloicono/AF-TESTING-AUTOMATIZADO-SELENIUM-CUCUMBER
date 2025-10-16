@@ -5,10 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
 
-
-public class Class8 {
+public class Clase8_DemoErrorNoUsoEsperas {
     public static void main(String[] args) {
 
         System.setProperty("web-driver.chrome.driver","./drivers/chromedriver.exe");
@@ -17,30 +15,26 @@ public class Class8 {
 
         WebDriver driver = new ChromeDriver();
 
-        // Con esto le indico a selenium que en caso de no aparecer al principio espere 10 segundos hasta encontrarlo
-
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
         try{
 
             // Navegamos a la web
 
-            driver.get("C:/Users/Jorge/Desktop/AF-SELENIUM-FORMADORES-IT/RECURSOS/index_completo.html");
+            driver.get("C:\\Users\\Jorge\\Desktop\\AF-TESTING-AUTOMATIZADO-SELENIUM-CUCUMBER\\RECURSOS\\src\\ejemplosylabs\\resources\\index_completo.html");
 
-            // Busco el elemento por id y lo guardo en un webelement. Vamos a mostrar por que es necesario el explicit wait
+            // Busco el elemento por id y lo guardo en un webelement
 
-            WebElement buttonExplicitWait = driver.findElement(By.id("explicitWaitButton"));
+            WebElement buttonImplicitWait = driver.findElement(By.id("implicitWaitButton"));
 
             // lo clico
 
-            buttonExplicitWait.click();
+            buttonImplicitWait.click();
 
             // Esperamos 5 segundos a partir de ahora lo usamos simplemente para nosotros verlo de forma detenida no para esperar a los elemento
 
             Thread.sleep(5000);
 
-            // No aparece nada, por que?? se ha clicado en el boton, pero todavia no estaba habilitado!! vamos a ver como arreglarlo...
-
+            // Esto me va a dar un error, ¿?¿?¿?¿? no ha cargado por que no hay ningun mecanismo de espera y selenium no ha sido capaz de  encontrar ese boton
+            // En la siguiente clase veremos como arreglar esto
 
         }catch (Exception e){
             e.printStackTrace();

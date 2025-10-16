@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 
-public class Class7 {
+public class Clase10_EjemploImplicitIneficienteNonClick {
     public static void main(String[] args) {
 
         System.setProperty("web-driver.chrome.driver","./drivers/chromedriver.exe");
@@ -25,21 +25,21 @@ public class Class7 {
 
             // Navegamos a la web
 
-            driver.get("C:/Users/Jorge/Desktop/AF-SELENIUM-FORMADORES-IT/RECURSOS/index_completo.html");
+            driver.get("C:\\Users\\Jorge\\Desktop\\AF-TESTING-AUTOMATIZADO-SELENIUM-CUCUMBER\\RECURSOS\\src\\ejemplosylabs\\resources\\index_completo.html");
 
-            // Busco el elemento por id y lo guardo en un webelement
+            // Busco el elemento por id y lo guardo en un webelement. Vamos a mostrar por que es necesario el explicit wait
 
-            WebElement buttonImplicitWait = driver.findElement(By.id("implicitWaitButton"));
+            WebElement buttonExplicitWait = driver.findElement(By.id("explicitWaitButton"));
 
             // lo clico
 
-            buttonImplicitWait.click();
+            buttonExplicitWait.click();
 
             // Esperamos 5 segundos a partir de ahora lo usamos simplemente para nosotros verlo de forma detenida no para esperar a los elemento
 
             Thread.sleep(5000);
 
-            // Esto ya no me da error puedo ver en el navegador que me aparece como si se ha publicado el mensaje correctamente
+            // No aparece nada, por que?? se ha clicado en el boton, pero todavia no estaba habilitado!! vamos a ver como arreglarlo...
 
 
         }catch (Exception e){

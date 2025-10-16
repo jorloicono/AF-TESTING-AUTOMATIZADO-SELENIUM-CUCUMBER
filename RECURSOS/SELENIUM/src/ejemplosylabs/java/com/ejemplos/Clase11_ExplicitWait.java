@@ -11,7 +11,7 @@ import java.time.Duration;
 import java.util.function.Function;
 
 
-public class Class9 {
+public class Clase11_ExplicitWait {
     public static void main(String[] args) {
 
         System.setProperty("web-driver.chrome.driver","./drivers/chromedriver.exe");
@@ -24,7 +24,7 @@ public class Class9 {
 
             // Navegamos a la web
 
-            driver.get("C:/Users/Jorge/Desktop/AF-SELENIUM-FORMADORES-IT/RECURSOS/index_completo.html");
+            driver.get("C:\\Users\\Jorge\\Desktop\\AF-TESTING-AUTOMATIZADO-SELENIUM-CUCUMBER\\RECURSOS\\src\\ejemplosylabs\\resources\\index_completo.html");
 
             // Es un wait generico
 
