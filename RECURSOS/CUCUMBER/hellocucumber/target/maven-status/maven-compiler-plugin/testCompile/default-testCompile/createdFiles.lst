@@ -1,2 +1,5 @@
-hellocucumber\RunCucumberTest.class
-hellocucumber\StepDefinitions.class
+testrunner\TestRunner.class
+stepdefinitions\FailedLoginSteps.class
+stepdefinitions\LoginSteps.class
+stepdefinitions\SuccessfulLoginSteps.class
+stepdefinitions\Hooks.class
