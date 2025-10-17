@@ -3,7 +3,7 @@
 # 1. Introducción a la Automatización de Pruebas y BDD
 - **Conceptos fundamentales de la automatización de pruebas.**  
 - **Introducción al Behavior Driven Development (BDD)** y cómo Cucumber facilita la colaboración.  
-- **Lenguaje Gherkin.**  
+- **Lenguaje Gherkin**  
 - **Identificación de casos adecuados para automatización.**
 
 ---
