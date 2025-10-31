@@ -29,7 +29,7 @@ public class Ejercicio2 {
     }
 
     // ==========================
-    // 🟢 Parte 1 – Espera Implícita
+    // Parte 1 – Espera Implícita
     // ==========================
     public long testImplicitWait() {
         System.out.println("=== Parte 1: Espera Implícita ===");
@@ -95,7 +95,7 @@ public class Ejercicio2 {
     }
 
     // ==========================
-    // 🔵 Parte 3 – Espera Fluida (Fluent Wait)
+    // Parte 3 – Espera Fluida (Fluent Wait)
     // ==========================
     public long testFluentWait() {
         System.out.println("=== Parte 3: Espera Fluida ===");
